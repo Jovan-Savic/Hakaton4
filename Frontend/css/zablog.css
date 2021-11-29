@@ -1,0 +1,59 @@
+
+
+
+body{
+
+}
+.kardkont{
+    margin: 0 auto;
+    max-width: 1000px;
+    position: relative;
+    display: grid;
+    gap:20px;
+    grid-template-columns: repeat(3,1fr);
+    height: 100vh;
+    align-items: center;
+}
+.card{
+    box-shadow: 0 2px 3px hsla(0, 0%, 0%, 0.89);
+
+}
+.slika{
+    width: 100%;
+    display: block;
+}
+.tekst{
+    line-height: 1.5;
+    font-size: 0.9rem;
+    padding: 20px;
+    background-color: #f0f0fa;
+}
+.je{
+    margin-top: 0;
+}
+.dva{
+    margin-top: 0;
+}
+
+.info{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    background: #555555;
+    font-size: 1.5em;
+   
+}
+.lajkk{
+   width: 50%;
+   aspect-ratio: 1;
+}
+
+
+.lajkovi{
+    z-index: 9999;
+}
+
+
+header{
+    z-index: 9999;
+}

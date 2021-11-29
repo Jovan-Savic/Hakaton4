@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root{
+    --crvena:#dc0701;
+    --zuta:hsl(51, 84%, 70%);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+
+.flex{
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+
+.glava{
+    width: 100%;
+    justify-content: space-around;
+    place-items: center;
+    background: #dc0701;
+    position: fixed;
+}
+
+.prvi{
+    font-size: 25px;
+    color: hsl(51, 84%, 70%);
+    text-shadow: 0 0 8px black;
+    position: relative;
+}
+.drugi{
+    font-size: 25px;
+    color: hsl(51, 84%, 70%);
+    text-shadow: 0 0 8px black;
+}
+
+.logo:hover .prvi{
+    transform: rotate(-45deg);
+    transition: 350ms;
+}
+.logo:hover .drugi{
+    transform: rotate(-45deg);
+    transition: 350ms;
+}
+
+
+.meni{
+    gap:150px;
+}
+.debelo:hover{
+    font-weight: bold;
+}
+.meni .debelo{
+    font-size: 20px;
+    color: var(--zuta);
+
+}
+.login{
+    background-color: var(--zuta);
+
+   
+    border-radius: 5px;
+}
+.pom{
+    color: red;
+    padding: 2px 20px;
+}
+.pom:hover {
+    font-weight: bold;
+
+}
+.burger{
+    width: 40px;
+    height: 40px;
+}
+.logo:hover .burger{
+    display: absolute;
+}
