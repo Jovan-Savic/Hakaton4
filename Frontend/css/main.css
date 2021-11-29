@@ -87,3 +87,6 @@ ul{
 .logo:hover .burger{
     display: absolute;
 }
+header{
+    position: fixed;
+}
