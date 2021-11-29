@@ -9,12 +9,13 @@ body{
     max-width: 1000px;
     position: relative;
     display: grid;
-    gap:20px;
-    grid-template-columns: repeat(3,1fr);
+    column-gap: 3rem;
+    grid-template-columns: repeat(3,.5fr);
     height: 100vh;
     align-items: center;
 }
 .card{
+    margin-block-start:5rem;
     box-shadow: 0 2px 3px hsla(0, 0%, 0%, 0.89);
 
 }
@@ -60,4 +61,11 @@ body{
 
 header{
     z-index: 9999;
+}
+.prst{
+    cursor: pointer;
+}
+.card:hover{
+    transform: scale(1.10);
+    transition: 250ms;
 }
