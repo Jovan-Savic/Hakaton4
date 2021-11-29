@@ -31,6 +31,7 @@ ul{
     place-items: center;
     background: #dc0701;
     position: fixed;
+    min-height: 50px ;
 }
 
 .prvi{
