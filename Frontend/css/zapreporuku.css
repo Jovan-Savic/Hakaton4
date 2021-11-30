@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root{
+    --crvena:#dc0701;
+    --zuta:hsl(51, 84%, 70%);
+}
+
+body{
+    margin:0;
+     font-family: 'Poppins';
+     background-image: url("../images/backgroundpreporuke.jpg");
+     background-repeat: no-repeat ;
+     background-size: cover ;
+    
+ }
+
+.mapa{
+position:absolute;
+right:12%;
+width:25%;
+height: 35%;
+border:red solid 2px;
+
+}
+
+
+.img{
+    position:absolute;
+    left:7%;
+    width:40%;
+    height: 35%;
+}
