@@ -89,6 +89,7 @@ ul{
 }
 header{
     position: fixed;
+    z-index: 9999;
 }
 
 .idegasamongas{
