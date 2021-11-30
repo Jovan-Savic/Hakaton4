@@ -2,7 +2,7 @@
 
 
 body{
-
+background-image: url(../images/blogo.jpg);
 }
 .kardkont{
     margin: 0 auto;
@@ -45,7 +45,7 @@ body{
     padding: 15px;
     display: flex;
     justify-content: space-between;
-    background: #555555;
+    background: #e2423c;
     font-size: 1.5em;
    
 }
