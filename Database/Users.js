@@ -1,12 +1,16 @@
 const monguse = require("mongoose");
 
 const UserSh = new monguse.Schema({
-    User: {
+    Username: {
         type: String,
         trim: true,
         required: true,
     },
     Password: {
-        
+        type: String,
+        trim: true,
+        required: true,
     },
 });
+
+module.exports = monguse.model("User", UserSh);

@@ -23,9 +23,9 @@
 
             <nav>
                 <ul class="meni flex">
-                    <li><a href="about.html" class="debelo">About us</a></li>
-                    <li><a href="preporuka.html" class="debelo ">Preporuka</a></li>
                     <li><a href="blog.html" class="debelo ">Blog</a></li>
+                    <li><a href="preporuka.html" class="debelo ">Preporuka</a></li>
+                    <li><a href="about.html" class="debelo">About us</a></li>
                     <li class="login">
                        
                         <a href="login.html" class="pom"> Login</a>
@@ -47,17 +47,28 @@
         <div class="kontejner" id="radi">
 
             <div class="kont" >
-                <form action="" class="form" id="form1"> 
-                    <p class="naslov"> Prijavi se</p>
-                    <input type="text" placeholder="User" class="input" >
-                    <input type="password" placeholder="Password" class="input">
-                    <a href="#" onclick="alert('sucks to suck')" class="zaboravljena">Zaboravili ste lozinku?</a>
-
-                    <button class="btn" >Prijavi se</button>
-
-                </form>
+               
+                
             </div>
+
+            <form action="" class="form" id="form1" onsubmit="login(event)"> 
+                <p class="naslov"> Prijavi se</p>
+                <input type="text" placeholder="User" class="input" >
+                <input type="password" placeholder="Password" class="input">
+                <a href="#" onclick="alert('sucks to suck')" class="zaboravljena">Zaboravili ste lozinku?</a>
+
+                <button class="btn">Prijavi se</button>
+                
+                
+            </form> 
+
+            <div id="box" class="neradi" style= "display:none; width: 300px; height: 350px; position: absolute; background-color: transparent; z-index: 9; box-shadow: 0 0 0 3px red; border-radius: 10px; ">
+                <p id="pogresni" style="display:none ;  position: absolute; color: hsl(0, 100%, 50%); left: 15%; font-weight: bold; font-size:14px ;letter-spacing:1px;top: 25%;z-index: 999;transform: scale(1.15); ">Uneli ste pogrešne podatke!</p>
+                <p id="prazni" style="  display: none; position: absolute; color: hsl(0, 100%, 50%); left: 15%; font-weight: bold; font-size:14px ;letter-spacing:1px;top: 25%;z-index: 999;transform: scale(1.15); ">Molim Vas unesite podatke!</p>
+            </div>
+           
         </div>
-        
+    
+        <script src="login.js"></script>
     </body>
 </html>
