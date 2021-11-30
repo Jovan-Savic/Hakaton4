@@ -110,12 +110,11 @@ header{
   .mySlides {
     display: none
   }
-  img {
-    vertical-align: middle;
-    border-radius: 15px;
-  }
+
   .slideshow-container {
     position: relative;
+    border-radius: 15px;
+    vertical-align: middle;
     border-radius: 15px;
   }
   /* Next & previous buttons */
