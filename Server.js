@@ -13,6 +13,8 @@ Connect();
 
 application.use(express.json());
 
+application.use(express.static("Frontend"));
+
 const flag = false;
 
 application.post("/User/Log", (request, response) => {

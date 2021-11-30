@@ -13,5 +13,21 @@ function login(event){
         prazni.style.display = "block";
     } else {
         //ajax posalje username i password
+        const xhttp = new XMLHttpRequest;
+        xhttp.onload = function() {
+            //nakon sto se dobije odgovor od servera
+            var logovan = xhttp.responseText;
+        }
+        xhttp.open("POST", "/User/Log");
+        xhttp.setRequestHeader("Content-type", "application/json");
+
+        var obj = {
+            "user":user,
+            "password": password
+        }
+
+        var json = JSON.stringify(obj);
+
+        xhttp.send(json);
     }
 }
