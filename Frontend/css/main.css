@@ -63,10 +63,7 @@ ul{
     transform: rotate(-45deg);
     transition: 350ms;
 }
-.logo:hover::after{
-  transform: rotate(45deg);
-  transition: 350ms;
-}
+
 
 .meni{
     gap:150px;
