@@ -5,7 +5,12 @@
     --zuta:hsl(51, 84%, 70%);
 }
 
+.kontejner{
+position: relative;
+width: 100%;
+height:100vh
 
+}
 body{
    margin:0;
     font-family: 'Poppins';
@@ -23,7 +28,7 @@ body{
     align-items: center;
     background-color: hsla(0, 12%, 5%, 0.671);
     max-width:25%;
-    height: 60%;
+    height: 76%;
     box-shadow: 7px 2px 5px gray;
     /*border: 4px solid #dc0701;*/
 }
