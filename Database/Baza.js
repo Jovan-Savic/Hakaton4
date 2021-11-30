@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 async function Connect() {
 
     try {
-        const link = "mongodb+srv://Hakerovi_drugari:pekypiro1203@cluster0.6icaf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+        const link = "mongodb+srv://Hakerovi_drugari:Hakerovi_drugari@cluster0.6icaf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 
         const connection = await mongoose.connect(link, {
