@@ -47,7 +47,7 @@
         <img src="./images/ad2.jpg" class="img">
 
 
-        <div id="googleMap"  class="mapa" style="height: 70%;"></div>
+        <div id="googleMap"  class="mapa"></div>
 
         <script>
         function myMap() {
@@ -63,9 +63,6 @@
 
         marker.setMap(map);
         }
-
-
-        
         </script>
         
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCmpkNzyqlr3XGT5q7xNg0mGPKqx-MyqM&callback=myMap"></script>
@@ -76,12 +73,31 @@
 
 
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr><br>
 
 
        <img src="./images/ad1.jpg" class="img">
+       <div id="googleMap1"  class="mapa"></div>
+
+        <script>
+        function myMap() {
+        var mapProp= {
+          center:new google.maps.LatLng(51.508742,-0.120850),
+          zoom:5,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap1"),mapProp);
+        var marker = new google.maps.Marker({
+        position:myCenter,
+        animation:google.maps.Animation.BOUNCE
+        });
+
+        marker.setMap(map);
+        }
+        </script>
         
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCmpkNzyqlr3XGT5q7xNg0mGPKqx-MyqM&callback=myMap"></script>
+        
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
 
 
 
