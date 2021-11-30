@@ -13,15 +13,16 @@ Connect();
 
 application.use(express.json());
 
-const a = 1;
+const flag = false;
 
-application.get("/", (request, response) => {
+application.post("/User/Log", (request, response) => {
 
-    response.json({
-
-        poruka: "ovo je stiglo od jsona",
-        vrednost: a,
-
-    });
-
+    try{
+        console.log("req pogodjen"),
+        console.log(request.body)
+    } catch(err) {
+        response.status(404).json({
+        poruka: err.message,
+        });
+    }
 });
