@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root{
+    --crvena:#dc0701;
+    --zuta:hsl(51, 84%, 70%);
+}
+
+
+body{
+   margin:0;
+    font-family: 'Poppins';
+    background-image: url("../images/aboutusbackground.jpg");
+    background-repeat: no-repeat ;
+    background-size: cover ;
+   
+}
+
+.idegasamongas{
+    color:white;
+    margin:auto;
+    border-radius: 15px;
+    padding: 20px;
+    align-items: center;
+    background-color: hsla(0, 12%, 5%, 0.671);
+    max-width:25%;
+    height: 60%;
+    box-shadow: 7px 2px 5px gray;
+    /*border: 4px solid #dc0701;*/
+}
+
+.side1{
+    margin:auto;
+    color:white;
+    align-items: center;
+    border-radius: 15px;
+    background-color: hsla(0, 12%, 5%, 0.671);
+    box-shadow: 7px 2px 5px gray;
+    position: absolute;
+    padding: 10px;
+    top: 20%;
+    left:10%;
+    max-width: 16%;
+}
+
+.side2{
+    margin:auto;
+    color:white;
+    padding: 10px;
+    align-items: center;
+    border-radius: 15px;
+    background-color: hsla(0, 12%, 5%, 0.671);
+    box-shadow: 7px 2px 5px gray;
+    position: absolute;
+    top: 67%;
+    right:10%;
+    max-width: 16%;
+}
