@@ -22,6 +22,16 @@ a{
 ul{
     list-style: none;
 }
+.flexbox{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+  }
+
+
+
+
 
 
 .glava{
@@ -101,6 +111,7 @@ header{
     background-color: hsla(0, 12%, 5%, 0.671);
     height: 60%;
     box-shadow: 7px 2px 5px gray;
+    width: 60%;
     /*border: 4px solid #dc0701;*/
 
 }
