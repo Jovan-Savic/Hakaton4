@@ -18,7 +18,7 @@ function blogGet() {
             + '<div class="pogleda"><font> ' + objResponse.list[x].Name + '</font></div></div></div>';
             
         }
-        console.log(text);
+        
         document.getElementsByClassName("kardkont")[0].insertAdjacentHTML('afterbegin', text);
         document.getElementsByClassName("kardkont")[0].style.display = "grid";
     }

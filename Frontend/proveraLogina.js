@@ -15,3 +15,23 @@
     xhttp.open("GET", "/Provera/Login");
     xhttp.send();
 }
+
+function prikaziBlogAdd() {
+
+    const xhttp = new XMLHttpRequest;
+    
+    xhttp.onload = function() {
+        var jsonResponse = xhttp.response;
+        var objResponse = JSON.parse(jsonResponse);
+        var logovan = objResponse.uspesno;
+
+        if (logovan == 1) {
+            var login = document.getElementsByClassName("login")[0];
+            login.style.display = "none";
+            document.getElementById("card-plus").style.display = "block";
+        }
+    }
+
+    xhttp.open("GET", "/Provera/Login");
+    xhttp.send();
+}
