@@ -86,7 +86,7 @@ application.get("/Blogs/Get", async (request, response) => {
 
 });
 
-application.post("/Blogs/Post", async (request, responce) => {
+application.post("/Blogs/Post", async (request, response) => {
 
     try{
         console.log("Salje blog");
