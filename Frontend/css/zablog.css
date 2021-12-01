@@ -35,8 +35,9 @@ background-size: cover;
 
 
 .loading {
-    border: 16px solid #f3f3f3;
-    border-top: 16px solid  hsl(51, 84%, 70%);; 
+    border: 16px solid #dc0701;;
+    border-top: 16px solid  hsl(51, 84%, 70%);
+     border-bottom: 16px solid  hsl(51, 84%, 70%);  
     border-radius: 50%;
     width: 120px;
     height: 120px;
