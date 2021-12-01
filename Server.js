@@ -68,7 +68,7 @@ application.get("/Provera/Login", async (request, response) => {
 
 });
 
-application.get("/Blogs/Get", async (request, responce) => {
+application.get("/Blogs/Get", async (request, response) => {
 
     try{
         console.log("Vraca blogove");
