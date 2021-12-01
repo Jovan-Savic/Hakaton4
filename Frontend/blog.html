@@ -15,7 +15,7 @@
 
         <script src="java/zablog.js"></script>
     </head>
-    <body  onload="provera()">
+    <body  onload="provera();blogGet();">
         <header class="glava flex">
 
             <a href="index.html" class="LinkHome" > <div class="logo flex">
@@ -74,9 +74,11 @@
                     <label for="pr" class="nass"> Priprema: </label>
                     <textarea  id="pr " cols="30" rows="3" class="area"></textarea> 
                 </form>
-        </div>
+            </div>
 
-                <div class="card" id="card1">
+            <span id="listaJela"></span>
+
+                <!-- <div class="card" id="card1">
                     <img src="images/card1.jpg" alt="" class="slika">
                     <div class="tekst">
                         <p class="je">oijsadijhsaodjsadjaoijdiadj[das</p>
@@ -98,7 +100,7 @@
                             <font> Ime jela</font>
                         </div>
                     </div>
-                </div>
+                </div> -->
                
                
         </div>
@@ -119,5 +121,6 @@
         </script>
 
         <script src="proveraLogina.js"></script>
+        <script src="blogGet.js"></script>
     </body>
 </html>

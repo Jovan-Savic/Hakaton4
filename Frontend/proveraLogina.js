@@ -1,7 +1,6 @@
  function provera(){
     const xhttp = new XMLHttpRequest;
     
-    console.log("jeste");
     xhttp.onload = function() {
         var jsonResponse = xhttp.response;
         var objResponse = JSON.parse(jsonResponse);
