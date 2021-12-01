@@ -59,20 +59,20 @@
         <div class="kardkont" style="display: none;">
 
             <div class="card plus" id="card plus">
-                <form action="" class="forma12 flex">
+                <form action="" class="forma12 flex" onsubmit="addBlog(event)">
                    
-                    <button class="zadod">
+                    <button class="zadod" >
                         +
                        
                     </button>
 
-                    <input type="text" placeholder="Ime jela" >
-                    <input type="url" placeholder="url slike">
+                    <input type="text" id="imeJela" placeholder="Ime jela" >
+                    <input type="url" id="slikaURL" placeholder="url slike">
 
                    
 
                     <label for="pr" class="nass"> Priprema: </label>
-                    <textarea  id="pr " cols="30" rows="3" class="area"></textarea> 
+                    <textarea  id="pr" cols="30" rows="3" class="area"></textarea> 
                 </form>
             </div>
 
@@ -122,5 +122,6 @@
 
         <script src="proveraLogina.js"></script>
         <script src="blogGet.js"></script>
+        <script src="blogAdd.js"></script>
     </body>
 </html>

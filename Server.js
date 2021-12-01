@@ -101,6 +101,10 @@ application.post("/Blogs/Post", async (request, responce) => {
 
         console.log(provera);
 
+        response.json({
+            uspesno: true,
+        });
+
     } catch(err) {
         response.status(404).json({
         poruka: err.message,
