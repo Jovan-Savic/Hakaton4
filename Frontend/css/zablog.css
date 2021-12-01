@@ -21,6 +21,7 @@ background-image: url(../images/blogo.jpg);
 }
 .slika{
     width: 100%;
+    height: 200px;
     display: block;
 }
 .tekst{
@@ -68,4 +69,43 @@ header{
 .card:hover{
     transform: scale(1.10);
     transition: 250ms;
+}
+
+
+.plus{
+    position: relative;
+    height:380px;
+}
+
+.zadod{
+    border-radius: 50%;
+    left: 40%;
+    width: 100px;
+    aspect-ratio: 1;
+    font-size: 80px;
+    background: none;
+    padding-bottom: 5px;
+    border: 4px solid hsl(0, 100%, 99%);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+
+}
+.nass{
+    font-size: 40px;
+ 
+    color:white;
+}
+.area{
+    margin-top:-10px;
+   resize: none;
+}
+.forma12{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.plus{
+    background: hsla(0, 0%, 0%, 0.527);
 }
