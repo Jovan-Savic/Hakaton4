@@ -11,10 +11,6 @@ const BlogSh = new monguse.Schema({
         trim: true,
         required: true,
     },
-    Likes: {
-        type: Number,
-        required: true,
-    },
     Picture: {
         type: String,
         trim: true,
