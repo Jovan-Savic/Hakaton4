@@ -16,7 +16,23 @@ function login(event){
         const xhttp = new XMLHttpRequest;
         xhttp.onload = function() {
             //nakon sto se dobije odgovor od servera
-            var logovan = xhttp.responseText;
+            var jsonResponse = xhttp.response;
+            var objResponse = JSON.parse(jsonResponse);
+            
+
+            console.log(jsonResponse);
+            console.log(objResponse.uspesno);
+            var logovan = objResponse.uspesno;
+
+            if (logovan == 0) {
+                prazni.style.display = "none";
+                div.style.display = "block";
+                pogresni.style.display = "block"; 
+            } else if (logovan == 1) {
+                window.location.replace("./index.html");
+            }
+
+
         }
         xhttp.open("POST", "/User/Log");
         xhttp.setRequestHeader("Content-type", "application/json");
