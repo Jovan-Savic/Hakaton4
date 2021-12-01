@@ -3,6 +3,8 @@
 
 body{
 background-image: url(../images/blogo.jpg);
+background-repeat: no-repeat;
+background-size: cover;
 }
 .kardkont{
     margin: 0 auto;
@@ -108,4 +110,7 @@ header{
 }
 .plus{
     background: hsla(0, 0%, 0%, 0.527);
+}
+.kardkont{
+    max-width: 1000px;
 }
