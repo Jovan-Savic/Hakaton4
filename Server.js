@@ -1,3 +1,4 @@
+const { request, response } = require("express");
 const express = require("express");
 const application = express();
 const Connect = require("./Database/Baza");
@@ -58,4 +59,20 @@ application.post("/User/Log", async (request, response) => {
         poruka: err.message,
         });
     }
+});
+
+application.get("/Provera/Login", async (request, response) => {
+
+    try {
+        console.log("trazi se flag");
+        response.json({
+            uspesno: flag,
+        });
+
+    } catch(err) {
+        response.status(404).json({
+        poruka: err.message,
+        });
+    }
+
 });
